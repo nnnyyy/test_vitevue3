@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // ts 파일을 어떤 버전의 자바스크립트로 바꿔줄지 결정
+    "module": "commonjs", // import 문법 구현 시 어떤 문법을 쓸지 결정    
+    "outDir": "./dist",                        /* Redirect output structure to the directory */
+    "rootDir": "../",
+    "strict": true,                           /* Enable all strict type-checking options. */
+    "esModuleInterop": true,                  /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+    "skipLibCheck": true,                     /* Skip type checking of declaration files. */
+    "forceConsistentCasingInFileNames": true,  /* Disallow inconsistently-cased references to the same file. */
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "@common/*": ["../common/*"]
+    }
+  },
+  "include": ["./src/**/*.ts","../common/**/*.ts"]
+}

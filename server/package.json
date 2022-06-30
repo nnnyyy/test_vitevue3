@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@types/node": "^18.0.0",
+    "module-alias": "^2.2.2"
+  },
+  "_moduleAliases": {
+    "@common": "dist/common"
+  }
+}
