@@ -1,6 +1,16 @@
 import 'module-alias/register'
-import {testFunc} from '@common/common'
-const test = ()=> { console.log('test func!')}
+import express from 'express'
+import path from 'path'
+import history from 'connect-history-api-fallback'
 console.log('server start')
-test()
-testFunc()
+
+const app = express()
+
+app.use(express.json())
+app.use(express.urlencoded({extended: false}))
+app.use(history())
+
+const publicPath = process.env.NODE_ENV !== 'production' ? path.join(__dirname, '..', 'public') : path.join(__dirname, '..', '..', '..', 'public')
+app.use(express.static(publicPath))
+
+app.listen(3100, ()=> console.log('listening...'))
