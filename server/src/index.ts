@@ -2,10 +2,13 @@ import 'module-alias/register'
 import express from 'express'
 import path from 'path'
 import history from 'connect-history-api-fallback'
+
+import rAPI from './router/api'
 console.log('server start')
 
 const app = express()
 
+app.use("/api", rAPI);
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 app.use(history())

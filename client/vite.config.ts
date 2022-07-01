@@ -6,7 +6,13 @@ const path = require('path')
 export default defineConfig({
   plugins: [vue()],  
   server: {
-    port: 8080
+    port: 8080,
+    proxy: {
+      '/api': {
+        target: `http://localhost:3100`,
+        changeOrigin: true
+      }
+    }
   },
   build: {
       outDir: path.join(__dirname, '..', 'server', 'public')
