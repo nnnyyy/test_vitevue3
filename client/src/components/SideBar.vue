@@ -9,8 +9,7 @@ const action = ()=> {
 </script>
 
 <template>
-  <button @click="action">테스트 버튼</button>
+<div>사이드 바</div>
 </template>
 
-<style scoped>
-</style>
+<style lang="scss" scoped></style>

@@ -1,7 +1,8 @@
 import {createWebHistory, createRouter} from 'vue-router'
+import {MenuMan} from '../menu'
 
-const routes = [
-    {path: '/', name: '', component: ()=>import('../views/Home.vue')}
+const routes = [    
+    ...MenuMan.makeRoutes()
 ]
 
 const router = createRouter({
