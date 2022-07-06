@@ -56,6 +56,15 @@ export const menu: IMenuItem[] = [
                             { name: "서브조회3", key: "m3", component: () => import("./views/Home.vue") },
                         ],
                     },
+                    {
+                        name: "조회2",
+                        key: "search2",
+                        children: [
+                            { name: "서브조회2-1", key: "m1", component: () => import("./views/search/account/search1/SubSearch1.vue") },
+                            { name: "서브조회2-2", key: "m2", component: () => import("./views/Home.vue") },
+                            { name: "서브조회2-3", key: "m3", component: () => import("./views/Home.vue") },
+                        ],
+                    },
                 ],
             },
             {
@@ -150,7 +159,6 @@ export class MenuMan {
     }
 
     static getLv4(path: string) {
-        console.log(path)
         const lv3 = MenuMan.getLv3(path)
         if( !lv3 ) return undefined
         const p = path.split("/");
