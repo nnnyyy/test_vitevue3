@@ -1,0 +1,29 @@
+{
+    "centerList": [
+        {
+            "worldId": 0,
+            "name": "로컬-알파",
+            "host": "localhost",
+            "port": 9200
+        },
+        {
+            "worldId": 1,
+            "name": "로컬-베타",
+            "host": "localhost",
+            "port": 9201
+        }
+    ],
+    "toolDataServer": {
+        "port": 5999,
+        "host": "localhost"
+    },
+    "grapi": {
+        "id": "nuis",
+        "key": "DVHAM6SDVL3R7YJVK5MFQHZM3NDSHVH7",
+        "path": "http://dev.grapi.weboffice.co.kr/api"
+    },
+    "port": 9100,
+    "isTestServer": false,
+    "isStageServer": false,
+    "isDevMode": true
+}

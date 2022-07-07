@@ -71,7 +71,7 @@ nav ul ul {
 	display: none;
 	position: absolute;   
   background-color: #2c2c2c;
-	top: 25px; /* the height of the main nav */
+	top: 20px; /* the height of the main nav */
   margin-left: -100px;
   padding: 20px 0 10px 0;
   z-index: 10000;

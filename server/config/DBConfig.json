@@ -1,0 +1,71 @@
+{
+    "db_list": [
+        {
+            "server": "10.255.3.134",
+            "port": 7890,
+            "user": "sa",
+            "password": "Y0ngM@nYMCA",
+            "database": "opTool"
+        },
+        {
+            "server": "10.255.3.134",
+            "port": 7890,
+            "user": "sa",
+            "password": "Y0ngM@nYMCA",
+            "database": "GlobalAccount"
+        },
+        {
+            "server": "10.255.3.134",
+            "port": 7890,
+            "user": "sa",
+            "password": "Y0ngM@nYMCA",
+            "database": "GameInformation"
+        },
+        {
+            "server": "10.255.3.134",
+            "port": 7891,
+            "user": "sa",
+            "password": "Y0ngM@nYMCA",
+            "database": "GameLog"            
+        },
+        {
+            "server": "10.255.3.134",
+            "port": 7891,
+            "user": "sa",
+            "password": "Y0ngM@nYMCA",
+            "database": "UserReport"
+        },
+        {
+            "server": "10.255.3.134",
+            "port": 7891,
+            "user": "sa",
+            "password": "Y0ngM@nYMCA",
+            "database": "MapleStats"
+        },
+        {
+            "server": "10.255.3.134",
+            "port": 7890,
+            "user": "sa",
+            "password": "Y0ngM@nYMCA",
+            "database": "Social"
+        },
+        {
+            "server": "10.255.3.134",
+            "port": 7891,
+            "user": "sa",
+            "password": "Y0ngM@nYMCA",
+            "database": "Claim"
+        },
+        {
+            "server": "10.255.3.134",
+            "port": 7891,
+            "user": "sa",
+            "password": "Y0ngM@nYMCA",
+            "database": "ItemLog"
+        }
+    ],
+    "gwinfo": {
+        "id": "sa",
+        "pw": "Y0ngM@nYMCA"
+    }
+}

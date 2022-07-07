@@ -54,7 +54,7 @@ export const menu: IMenuItem[] = [
                         children: [
                             { name: "서브조회1", key: "m1", component: () => import("./views/search/account/search1/SubSearch1.vue") },
                             { name: "서브조회2", key: "m2", component: () => import("./views/Home.vue") },
-                            { name: "서브조회3", key: "m3", component: () => import("./views/Home.vue") },
+                            { name: "서브조회3", key: "m3", component: () => import("./views/Home.vue") }
                         ],
                     },
                     {
@@ -63,7 +63,7 @@ export const menu: IMenuItem[] = [
                         children: [
                             { name: "서브조회2-1", key: "m1", component: () => import("./views/search/account/search1/SubSearch1.vue") },
                             { name: "서브조회2-2", key: "m2", component: () => import("./views/Home.vue") },
-                            { name: "서브조회2-3", key: "m3", component: () => import("./views/Home.vue") },
+                            { name: "서브조회2-3", key: "m3", component: () => import("./views/Home.vue") }
                         ],
                     },
                 ],
@@ -78,7 +78,7 @@ export const menu: IMenuItem[] = [
                         children: [
                             { name: "서브조회1", key: "m1", component: () => import("./views/Home.vue") },
                             { name: "서브조회2", key: "m2", component: () => import("./views/Home.vue") },
-                            { name: "서브조회3", key: "m3", component: () => import("./views/Home.vue") },
+                            { name: "서브조회3", key: "m3", component: () => import("./views/Home.vue") }
                         ],
                     },
                 ],
@@ -95,7 +95,7 @@ export const menu: IMenuItem[] = [
                 children: [
                     { name: "서브로그조회1", key: "m1", component: () => import("./views/search/account/search1/SubSearch1.vue") },
                     { name: "서브로그조회2", key: "m2", component: () => import("./views/Home.vue") },
-                    { name: "서브로그조회3", key: "m3", component: () => import("./views/Home.vue") },
+                    { name: "서브로그조회3", key: "m3", component: () => import("./views/Home.vue") }
                 ],
             }
         ]
@@ -183,7 +183,7 @@ export class MenuMan {
                 for (const m2 of m1.children) {
                     if (!m2.children) {
                         routes.push({ path: `/`, component: Lv1Route, children: [
-                            { path: `/${m1.key}/${m2.key}`, component: m1.component! }
+                            { path: `/${m1.key}/${m2.key}`, component: m2.component! }
                         ] });
                         continue;
                     }
