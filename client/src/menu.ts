@@ -4,6 +4,7 @@
 // 3뎁스가 있으면 4뎁스도 필수
 
 import { RouteRecordRaw, RouteComponent } from "vue-router";
+import Lv1Route from './views/Lv1Route.vue'
 import SubRoute from './views/SubRoute.vue'
 
 export interface IMenuItem {
@@ -171,15 +172,19 @@ export class MenuMan {
         const routes: RouteRecordRaw[] = [];
         for (const m1 of menu) {
             const setRedirectOrigin: Set<string> = new Set();
-            if (!m1.children && !m1.childrenLv3) {
-                routes.push({ path: `/${m1.key}`, component: m1.component! });
+            if (!m1.children && !m1.childrenLv3) {                
+                routes.push({ path: `/`, component: Lv1Route, children: [
+                    { path: `/${m1.key}`, component: m1.component! }
+                ] });
                 continue;
             }
 
             if (m1.children ) {
                 for (const m2 of m1.children) {
                     if (!m2.children) {
-                        routes.push({ path: `/${m1.key}/${m2.key}`, component: m2.component! });
+                        routes.push({ path: `/`, component: Lv1Route, children: [
+                            { path: `/${m1.key}/${m2.key}`, component: m1.component! }
+                        ] });
                         continue;
                     }
 
